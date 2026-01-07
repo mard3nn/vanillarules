@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Правила сервера</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0b0d;
+      --card: #111114;
+      --accent: #ff2f6d;
+      --text: #eaeaf0;
+      --muted: #9a9aa5;
+      --border: rgba(255,255,255,0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #16161c, #0b0b0d 60%);
+      color: var(--text);
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    header p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      margin: 60px 0 20px;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(160deg, rgba(255,47,109,0.08), transparent 60%), var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .rules {
+      margin-top: 30px;
+    }
+
+    .rule {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 14px;
+      padding: 18px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    .rule span {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .rule div {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 50px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Правила сервера</h1>
+    <p>Обязательны к прочтению для всех игроков</p>
+  </header>
+
+  <div class="container">
+
+    <h2 class="section-title">1. Общие положения</h2>
+    <div class="rules">
+      <div class="rule"><span>1.1</span><div>Все правила, связанные с игровым процессом, взаимоотношениями между игроками и субординацией, принимаются администрацией сервера.</div></div>
+      <div class="rule"><span>1.2</span><div>Данный свод правил обязателен для исполнения всеми игроками сервера. Незнание правил не освобождает от ответственности и может усугубить наказание.</div></div>
+      <div class="rule"><span>1.3</span><div>Администрация сервера оставляет за собой право изменять и дополнять правила без предварительного уведомления игроков.</div></div>
+      <div class="rule"><span>1.4</span><div>Апелляции и спорные ситуации рассматривает владелец сервера (TG: <b>@l0owa</b>).</div></div>
+    </div>
+
+    <h2 class="section-title">2. Читы и стороннее ПО</h2>
+    <div class="rules">
+      <div class="rule"><span>2.1</span><div>Запрещено использование любых читов, хаков, модификаций и программ, дающих игровое преимущество над другими игроками.</div></div>
+      <div class="rule"><span>2.2</span><div>К запрещённым относятся: X-Ray, Fly, KillAura, ESP, AimBot, FreeCam, AutoTotem и любые их аналоги.</div></div>
+      <div class="rule"><span>2.3</span><div>Запрещено хранение читов на компьютере, если они были удалены менее чем 14 дней назад.</div></div>
+      <div class="rule"><span>2.4</span><div>Совместная игра с игроком, использующим запрещённое ПО, приравнивается к нарушению.</div></div>
+    </div>
+
+    <h2 class="section-title">3. Дюпы и баги</h2>
+    <div class="rules">
+      <div class="rule"><span>3.1</span><div>Использование дюпов предметов и блоков на сервере разрешено.</div></div>
+      <div class="rule"><span>3.2</span><div>Разрешается распространение информации о дюпах и обмен дюпнутыми предметами.</div></div>
+      <div class="rule"><span>3.3</span><div>Запрещено использовать дюпы и баги для намеренного нарушения стабильности сервера.</div></div>
+    </div>
+
+    <h2 class="section-title">4. Вред серверу</h2>
+    <div class="rules">
+      <div class="rule"><span>4.1</span><div>Запрещено создание лаг-машин, механизмов и конструкций, приводящих к снижению TPS или крашу сервера.</div></div>
+      <div class="rule"><span>4.2</span><div>Запрещены намеренные заливы чанков водой или лавой, а также бесконечные обновления блоков.</div></div>
+      <div class="rule"><span>4.3</span><div>Администрация вправе удалить любые механизмы, наносящие вред серверу, без компенсации.</div></div>
+    </div>
+
+    <h2 class="section-title">5. Автоматизация</h2>
+    <div class="rules">
+      <div class="rule"><span>5.1</span><div>Запрещено использование ботов, макросов и стороннего ПО для автоматизации игровых процессов.</div></div>
+      <div class="rule"><span>5.2</span><div>К запрещённому относится автоматическая рыбалка, фарм через ПО и автокликеры.</div></div>
+    </div>
+
+    <h2 class="section-title">6. Чат и общение</h2>
+    <div class="rules">
+      <div class="rule"><span>6.1</span><div>Запрещён флуд: более двух одинаковых или схожих сообщений подряд в течение одной минуты.</div></div>
+      <div class="rule"><span>6.2</span><div>Запрещён обход мута с помощью твинков или других игроков.</div></div>
+      <div class="rule"><span>6.3</span><div>Запрещены аморальные темы, 18+ контент и чрезмерное употребление нецензурной лексики.</div></div>
+      <div class="rule"><span>6.4</span><div>Запрещён некорректный текст на табличках, в книгах и названиях предметов.</div></div>
+    </div>
+
+    <h2 class="section-title">7. Территории и постройки</h2>
+    <div class="rules">
+      <div class="rule"><span>7.1</span><div>Запрещена бессмысленная порча территории, заливы, гриферство и намеренное препятствование доступу к чужим постройкам.</div></div>
+    </div>
+
+    <h2 class="section-title">8. Фермы и механизмы</h2>
+    <div class="rules">
+      <div class="rule"><span>8.1</span><div>Разрешены любые фермы и механизмы, если они не создают чрезмерную нагрузку на сервер.</div></div>
+      <div class="rule"><span>8.2</span><div>Допустимое количество мобов на фермах — до 40 мобов одного вида.</div></div>
+      <div class="rule"><span>8.3</span><div>Администрация вправе сократить количество мобов или отключить ферму без предварительного уведомления.</div></div>
+    </div>
+
+    <h2 class="section-title">9. Моды и ресурспаки</h2>
+    <div class="rules">
+      <div class="rule"><span>9.1</span><div>Разрешены клиентские моды без игрового преимущества: OptiFine, Sodium, Lithium, HUD-моды, ReplayMod.</div></div>
+      <div class="rule"><span>9.2</span><div>Запрещены ресурспаки и моды, дающие визуальное преимущество (X-Ray, прозрачные блоки и аналоги).</div></div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026  • все права гав гав
+  </footer>
+
+</body>
+</html>
